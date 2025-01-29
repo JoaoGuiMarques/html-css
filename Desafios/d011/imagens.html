@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Reseta margens e paddings padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* A div que envolve o conteúdo */
+.background {
+    height: 100vh; /* Ocupa toda a altura da janela */
+    background-image: url(espaco.jpg); /* Imagem de fundo */
+    background-size: cover; /* Redimensiona a imagem de fundo */
+    background-position: center; /* Centraliza a imagem de fundo */
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    position: relative;
+}
+
+/* A imagem centralizada */
+.centered-image {
+    max-width: 100%; /* Impede que a imagem ultrapasse a largura da tela */
+    max-height: 100%; /* Impede que a imagem ultrapasse a altura da tela */
+    object-fit: contain; /* Garante que a imagem mantenha sua proporção */
+}
+    </style>
+</head>
+<body>
+    <div class="background">
+        <img src="astronauta.png" alt="Imagem Centralizada" class="centered-image">
+    </div>
+</body>
+</html>
