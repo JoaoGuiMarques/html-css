@@ -25,7 +25,7 @@ header > h1 {
     display: block;
     text-align: center;
     padding: 10px;
-    cursor: pointer;
+    cursor: pointer; /*cursor de mao pra clicar*/
 }
 
 #burguer:hover {
