@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
     <header>
         <h1>Meu Site</h1>
-        <menu>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <menu id="itens">
             <ul>
                 <li><a href="#">Opção 1</a></li>
                 <li><a href="#">Opção 2</a></li>
@@ -23,11 +25,20 @@
         <article>
             <h2>Testando Media Queries</h2>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi ab vitae maiores perspiciatis, rem quae adipisci mollitia nulla deserunt quas neque repellendus voluptas, quo unde possimus minus quam, laudantium quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae fuga aut distinctio minima necessitatibus maiores eum, quis temporibus, fugit enim harum architecto natus ducimus debitis nihil dicta obcaecati earum quod?</p>
-            
+
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi ab vitae maiores perspiciatis, rem quae adipisci mollitia nulla deserunt quas neque repellendus voluptas, quo unde possimus minus quam, laudantium quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae fuga aut distinctio minima necessitatibus maiores eum, quis temporibus, fugit enim harum architecto natus ducimus debitis nihil dicta obcaecati earum quod? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta dolorem vitae error, quo at autem quisquam neque ipsum quis in nam. Dolores asperiores atque voluptas rem omnis saepe nam minus.</p>
 
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi ab vitae maiores perspiciatis, rem quae adipisci mollitia nulla deserunt quas neque repellendus voluptas, quo unde possimus minus quam, laudantium quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae fuga aut distinctio minima necessitatibus maiores eum, quis temporibus, fugit enim harum architecto natus ducimus debitis nihil dicta obcaecati earum quod? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque nam placeat ex eligendi rem dolore corporis, laboriosam sed accusantium excepturi eum atque praesentium sunt voluptatem tempora corrupti cum at. Explicabo! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi fugiat excepturi vero! Harum doloremque excepturi nostrum nihil molestias iure accusamus sapiente dolorum vitae eos blanditiis reprehenderit delectus, porro ut fuga!</p>
         </article>
     </main>
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>
